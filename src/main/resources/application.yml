@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: tarabut-get
+  datasource:
+    url: jdbc:postgresql://host.docker.internal/tarabut
+    driverClassName: org.postgresql.Driver
+    userName: postgres
+    password: tarabut123
+    platform: org.hibernate.dialect.Postgresql
+  jpa:
+    hibernate:
+      ddl-auto: none
+      show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+
